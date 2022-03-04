@@ -11,16 +11,7 @@ const Home = () => {
       <section className="flip-card">
         <div className="inner">
           <div className="front">
-            <img
-              src="https://images.unsplash.com/photo-1536060316316-2466bda904f1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2000&q=80"
-              alt="You got this" width={300}
-            />
-          </div>
-          <div className="back">
-            <img
-              src="https://images.unsplash.com/photo-1504805572947-34fad45aed93?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
-              alt=" Work Hard"
-            />
+		  <iframe src="https://giphy.com/embed/3o6gbbuLW76jkt8vIc" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/thisisgiphy-3o6gbbuLW76jkt8vIc">via GIPHY</a></p>
           </div>
         </div>
       </section>

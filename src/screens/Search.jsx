@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 
 function Search(){
     const [gifs, setGifs] = useState([]);
-    const [searchWord, setSearchWord] = useState("tech");
+    const [searchWord, setSearchWord] = useState("music");
     
     useEffect(() => {
         fetchSearchData();
