@@ -1,23 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import { NavLink, Route, Routes } from 'react-router-dom';
+import Home from './screens/Home';
+import Random from './screens/Random';
+import Search from './screens/Search';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='links'>
+        <nav>
+          <NavLink to={"/"}>Home</NavLink>
+          <NavLink to={"/Random"}>Random</NavLink>
+          <NavLink to={"/Search"}>Search</NavLink>
+        </nav>
+      </div>
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+        <Route path="/Random" element={<Random/>}/>
+        <Route path="/Search" element={<Search/>}/>
+      </Routes>
+
     </div>
   );
 }
